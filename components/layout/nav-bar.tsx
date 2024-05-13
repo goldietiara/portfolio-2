@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <nav className=" bg-transparent py-5 px-16 h-fit w-full flex justify-between items-center">
+    <nav className=" bg-transparent py-5 md px-5 h-fit w-full flex justify-between items-center max-w-7xl mx-auto">
       <h1 className=" text-xl font-mono text-gray-700">Goldie Portfolio</h1>
-      <div className="flex text-white font-mono text-sm">
+      <div className="md:flex text-white font-mono text-sm hidden">
         <button className=" bg-yellow-400 py-2 px-5 rotate-0 hover:animate-wiggle hover:rotate-12  duration-150 ease-in-out transition-all cursor-pointer">
           <p>Work</p>
         </button>
