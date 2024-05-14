@@ -3,11 +3,6 @@
 import Image from "next/image";
 
 const Contact = () => {
-  const ProjectImg = [
-    { projectImg: "/todo.png" },
-    { projectImg: "/e-commerce.png" },
-    { projectImg: "/twitter.png" },
-  ];
   return (
     <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[1000px] h-full relative flex justify-center font-mono text-sm mt-32">
       <div className="w-[1000px] flex flex-col lg:grid lg:grid-cols-1 lg:grid-rows-3">
