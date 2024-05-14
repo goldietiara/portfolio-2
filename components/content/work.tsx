@@ -3,182 +3,109 @@
 import Image from "next/image";
 
 const Work = () => {
-  const Intro = [
-    {
-      h: "Role",
-      p: "Software Engginer",
-    },
-    {
-      h: "Specialized in",
-      p: "Front-End",
-    },
-    {
-      h: "Experienced at",
-      p: "Software Development",
-    },
-    {
-      h: "Years of Experience",
-      p: "almost 2 years",
-    },
+  const ProjectImg = [
+    { projectImg: "/todo.png" },
+    { projectImg: "/e-commerce.png" },
+    { projectImg: "/twitter.png" },
   ];
   return (
-    <div className="w-[900px] h-[500px] relative flex justify-center ">
-      <section className="absolute  rotate-2 -z-10 right-5 top-4 lg:right-8 lg:top-4">
-        <div className=" w-[780px] h-[400px] bg-stone-200 border border-stone-300"></div>
-      </section>
-
-      <section className=" w-fit h-fit bg-white p-3 border-[0.5px] md:border border-stone-300 font-mono text-sm text-sky-300 z-20 relative">
-        <svg
-          width="64"
-          height="73"
-          viewBox="0 0 64 73"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="absolute -top-10 -left-5 z-30 hidden md:flex"
-        >
-          <rect
-            x="28.304"
-            y="36.3843"
-            width="5.76116"
-            height="34.567"
-            transform="rotate(-34.1547 28.304 36.3843)"
-            fill="#D9D9D9"
-          />
-          <circle
-            cx="22.5056"
-            cy="23.3485"
-            r="16.2033"
-            transform="rotate(-34.1547 22.5056 23.3485)"
-            fill="#EC4948"
-          />
-          <circle
-            cx="21.6339"
-            cy="14.3672"
-            r="3.9608"
-            transform="rotate(-34.1547 21.6339 14.3672)"
-            fill="#F9F4E6"
-          />
-        </svg>
-        <div className="w-full h-full border border-stone-300 grid grid-cols-3 ">
-          <div className=" col-span-2 grid grid-cols-2">
-            <div className=" col-span-2 border border-stone-300 p-5">
-              <p>Name</p>
-              <h1 className="text-2xl text-center py-5 text-stone-900">
-                Goldie Tiara Putri
-              </h1>
-            </div>
-            {Intro.map((v, i) => {
-              return (
-                <div className="border border-stone-300 p-5 flex flex-col">
-                  <p>{v.h}</p>
-                  <h1 className=" pt-3 pb-5 pr-5 text-stone-900 indent-5">
-                    {v.p}
-                  </h1>
-                </div>
-              );
-            })}
-          </div>
-          <div className=" grid grid-cols-1 grid-rows-3">
-            {/* FIX LATER */}
-            <div className="flex items-center justify-center p-3 row-span-3 border border-stone-300">
+    <div className="w-[1000px] h-[500px] relative flex justify-center font-mono text-sm">
+      <div className="w-[800px] h-full grid grid-cols-12">
+        <section className="w-full h-full col-span-11 bg-pink-500 relative">
+          <div className="absolute w-full h-full bg-stone-800 z-40 grid grid-cols-4 grid-rows-2">
+            <div className=" col-span-3 row-span-1 relative">
+              {/* MY */}
               <Image
-                src={"/profile-pic.jpg"}
-                alt="photo"
-                width={180}
-                height={280}
-                className="border-stone-300 border p-3"
-              ></Image>
+                src={"/svg/work/m.svg"}
+                alt="m"
+                width={90}
+                height={90}
+                className="absolute top-[58px] left-8 z-20"
+              />
+              <Image
+                src={"/svg/work/y.svg"}
+                alt="y"
+                width={70}
+                height={70}
+                className="absolute top-[70px] left-[115px] z-10"
+              />
+              {/* WORK */}
+              <Image
+                src={"/svg/work/w.svg"}
+                alt="w"
+                width={90}
+                height={90}
+                className="absolute top-[60px] left-[250px] z-10"
+              />
+              <Image
+                src={"/svg/work/o.svg"}
+                alt="o"
+                width={67}
+                height={67}
+                className="absolute top-[85px] left-[330px] z-10"
+              />
+              <Image
+                src={"/svg/work/r.svg"}
+                alt="r"
+                width={80}
+                height={80}
+                className="absolute top-[55px] left-[380px] z-0"
+              />
+              <Image
+                src={"/svg/work/k.svg"}
+                alt="k"
+                width={60}
+                height={60}
+                className="absolute top-[75px] left-[450px] z-10"
+              />
             </div>
-            <div className="border border-stone-300 p-5 flex flex-col">
-              <p>Location</p>
-              <h1 className=" pt-3 pb-5 pr-5 text-stone-900 indent-5">
-                Jakarta, ID
-              </h1>
-              <svg
-                width="63"
-                height="44"
-                viewBox="0 0 63 44"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className=" absolute bottom-24 right-1 z-30"
-              >
-                <rect
-                  x="23.2322"
-                  y="4.5"
-                  width="37.7059"
-                  height="37.1275"
-                  rx="18.5637"
-                  fill="#D9D9D9"
-                  stroke="#D9D9D9"
-                  stroke-width="3"
-                />
-                <mask
-                  id="mask0_297_2623"
-                  maskUnits="userSpaceOnUse"
-                  x="24"
-                  y="6"
-                  width="36"
-                  height="35"
-                >
-                  <rect
-                    x="24.7322"
-                    y="6"
-                    width="34.7059"
-                    height="34.1275"
-                    rx="17.0637"
-                    fill="#F9F4E6"
-                  />
-                </mask>
-                <g mask="url(#mask0_297_2623)">
-                  <rect
-                    x="24.7322"
-                    y="6"
-                    width="34.7059"
-                    height="34.1275"
-                    fill="white"
-                  />
-                  <rect
-                    x="24.7322"
-                    y="6"
-                    width="34.7059"
-                    height="17.0637"
-                    fill="#EC4948"
-                  />
-                </g>
-                <path
-                  d="M13.4624 25.6889L5.61293 15.8253L17.4086 13.8749L13.4624 25.6889Z"
-                  fill="#EC4948"
-                  stroke="#EC4948"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                />
-                <circle
-                  cx="10.724"
-                  cy="10.286"
-                  r="8.94641"
-                  transform="rotate(-9.38901 10.724 10.286)"
-                  fill="#EC4948"
-                />
-                <circle
-                  cx="10.9812"
-                  cy="10.4702"
-                  r="3.80222"
-                  transform="rotate(-9.38901 10.9812 10.4702)"
-                  fill="#F9F4E6"
-                />
-                <ellipse
-                  cx="14.7394"
-                  cy="33.1987"
-                  rx="2.90758"
-                  ry="1.34196"
-                  transform="rotate(-9.38901 14.7394 33.1987)"
-                  fill="#92D4EB"
-                />
-              </svg>
+            <div className="w-full h-full relative">
+              <Image
+                src={"/work.jpg"}
+                alt="work-pic"
+                width={110}
+                height={110}
+                className="absolute top-[90px] left-[25px] border-8 border-white z-0"
+              />
+              <div className="w-[70px] h-[20px] bg-red-500 absolute top-[90px] left-[85px] rotate-[30deg] z-10"></div>
+            </div>
+            <div className=" col-span-4 row-span-2 relative p-5 flex items-end">
+              <div className="w-full h-[150px] bg-white flex justify-evenly items-center text-[10px] text-stone-600 font-light tracking-wide">
+                {ProjectImg.map((v, i) => {
+                  return (
+                    <div>
+                      <div className="w-full flex justify-between">
+                        <p>Code by Goldie</p>
+                        <p>+++</p>
+                      </div>
+                      <Image
+                        src={v.projectImg}
+                        alt={`${v.projectImg}-project`}
+                        width={180}
+                        height={40}
+                        className="w-fit h-fit"
+                      />
+                      <div className="w-full flex justify-between">
+                        <p>Code by Goldie</p>
+                        <p>+++</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+          <div className="absolute bg-teal-500 -right-36 bottom-5 text-white text-lg hover:-right-40 transition-all cursor-pointer z-0">
+            <p className="p-5 pl-14 text-center">More Work</p>
+          </div>
+        </section>
+        <section className="grid grid-cols-4 ">
+          <div className="w-full h-full bg-stone-100"></div>
+          <div className="w-full h-full bg-stone-400"></div>
+          <div className="w-full h-full bg-stone-100"></div>
+          <div className="w-full h-full bg-stone-400"></div>
+        </section>
+      </div>
     </div>
   );
 };
