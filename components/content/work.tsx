@@ -1,18 +1,14 @@
 "use client";
-
+import { ProjectImg } from "@/constants";
 import Image from "next/image";
+import Link from "next/link";
 
 const Work = () => {
-  const ProjectImg = [
-    { projectImg: "/todo.png" },
-    { projectImg: "/e-commerce.png" },
-    { projectImg: "/twitter.png" },
-  ];
   return (
-    <div className="w-[1000px] h-[500px] relative flex justify-center font-mono text-sm">
+    <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[1000px] h-[500px] relative flex md:justify-center font-mono text-sm">
       <div className="w-[800px] h-full grid grid-cols-12">
         <section className="w-full h-full col-span-11 bg-pink-500 relative">
-          <div className="absolute w-full h-full bg-stone-800 z-40 grid grid-cols-4 grid-rows-2">
+          <div className="absolute w-full h-full bg-stone-800 z-[70] grid grid-cols-4 grid-rows-2">
             <div className=" col-span-3 row-span-1 relative">
               {/* MY */}
               <Image
@@ -95,15 +91,33 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="absolute bg-teal-500 -right-36 bottom-5 text-white text-lg hover:-right-40 transition-all cursor-pointer z-0">
-            <p className="p-5 pl-14 text-center">More Work</p>
-          </div>
         </section>
-        <section className="grid grid-cols-4 ">
-          <div className="w-full h-full bg-stone-100"></div>
-          <div className="w-full h-full bg-stone-400"></div>
-          <div className="w-full h-full bg-stone-100"></div>
-          <div className="w-full h-full bg-stone-400"></div>
+        <section className="flex ">
+          <div className="w-[10px] h-full relative">
+            <div className="absolute w-full h-full bg-stone-100 z-50"></div>
+            <div className="absolute w-[180px] bg-teal-200 -right-[130px] bottom-[380px] text-cyan-700 hover:-right-[150px] hover:animate-wiggler transition-all cursor-pointer z-40">
+              <p className="p-3 pl-14 text-center">Project 1</p>
+            </div>
+            <div className="absolute w-[180px] bg-sky-200 -right-[130px] bottom-[300px] text-blue-500 hover:-right-[150px] hover:animate-wiggler transition-all cursor-pointer z-40">
+              <p className="p-3 pl-14 text-center">Project 2</p>
+            </div>
+          </div>
+          <div className="w-[10px] h-full relative">
+            <div className="absolute w-full h-full bg-stone-400 z-30"></div>
+            <div className="absolute w-[180px] bg-yellow-200 -right-[130px] bottom-[180px] text-stone-500 hover:-right-[150px] hover:animate-wiggler transition-all cursor-pointer z-20">
+              <p className="p-3 pl-14 text-center">Project 3</p>
+            </div>
+          </div>
+          <div className="w-[10px] h-full relative">
+            <div className="absolute w-full h-full bg-stone-100 z-10"></div>
+            <Link
+              href={"/my-work"}
+              className="absolute w-[180px] bg-teal-500 -right-[140px] bottom-5 text-white font-semibold hover:-right-[160px] hover:animate-wiggler transition-all cursor-pointer z-0"
+            >
+              <p className="p-5 pl-14 text-center">All Projects</p>
+            </Link>
+          </div>
+          <div className="w-[10px] h-full bg-stone-400" />
         </section>
       </div>
     </div>

@@ -1,26 +1,8 @@
 "use client";
-
+import { Intro } from "@/constants";
 import Image from "next/image";
 
 const AboutMe = () => {
-  const Intro = [
-    {
-      h: "Role",
-      p: "Software Engginer",
-    },
-    {
-      h: "Specialized in",
-      p: "Front-End",
-    },
-    {
-      h: "Experienced at",
-      p: "Software Development",
-    },
-    {
-      h: "Years of Experience",
-      p: "almost 2 years",
-    },
-  ];
   return (
     <div className="w-[900px] h-[500px] relative flex justify-center ">
       <section className="absolute  rotate-2 -z-10 right-5 top-4 lg:right-8 lg:top-4">
