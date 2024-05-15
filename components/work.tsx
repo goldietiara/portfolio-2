@@ -39,13 +39,13 @@ const WorkThumbnail = ({
 
   return (
     <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[1000px] h-full relative flex justify-center font-mono text-sm">
-      <div className="grid grid-cols-2 w-full">
-        <section className=" col-span-1 flex flex-col gap-10">
-          <div className=" w-[450px] bg-white border border-stone-300 text-stone-700 p-10 pt-10 pl-10 leading-relaxed relative">
-            <div className="absolute flex -top-[35px] -left-[15px]">
+      <div className="grid lg:grid-cols-2 grid-cols-1 w-full">
+        <section className=" col-span-1 flex flex-col gap-5 lg:gap-10 mt-14 lg:mt-0">
+          <div className=" w-full lg:w-[450px] bg-white border border-stone-300 text-stone-700 p-10 pt-10 pl-10 leading-relaxed relative">
+            <div className="absolute lg:flex -top-[35px] -left-[15px] hidden">
               <div className="bg-yellow-300 w-[25px]" />
               <p className=" bg-yellow-200 px-5 py-3 tracking-wide font-thin text-3xl">
-                {projectName}{" "}
+                {projectName}
               </p>
             </div>
             <p>{description}</p>
@@ -76,7 +76,7 @@ const WorkThumbnail = ({
             </div>
           </div>
         </section>
-        <section className=" col-span-1 flex justify-end">
+        <section className=" col-span-1 flex justify-start lg:justify-end row-start-1 lg:col-start-2">
           <div className=" bg-white border border-stone-300 h-fit w-fit p-5  relative">
             <Image
               src={`/${images}`}
@@ -119,6 +119,12 @@ const WorkThumbnail = ({
                   height={40}
                 />
               </a>
+            </div>
+            <div className="absolute flex lg:hidden -top-[35px] -left-[15px] ">
+              <div className="bg-yellow-300 w-[25px]" />
+              <p className=" bg-yellow-200 px-5 py-3 tracking-wide font-thin text-3xl">
+                {projectName}
+              </p>
             </div>
             <div className=" bg-gray-400 w-[50px] h-[20px] absolute -z-10 -right-[13px] bottom-[25px] rotate-[30deg]" />
           </div>

@@ -17,6 +17,8 @@ const config: Config = {
         wiggle: "wiggle 0.5s ease-in-out ",
         wiggle2: "wiggle2 0.5s ease-in-out ",
         wiggler: "wiggler 1s ease-in-out ",
+        wiggles: "wiggles 1s ease-in-out ",
+        wiggleb: "wiggleb 1s ease-in-out ",
       },
       keyframes: {
         wiggle: {
@@ -33,11 +35,25 @@ const config: Config = {
           "75%": { transform: "rotate(-14deg)" },
           "100%": { transform: "rotate(-12deg)" },
         },
+        wiggles: {
+          "0%": { transform: "rotate(0deg)" },
+          "25%": { transform: "rotate(-8deg)" },
+          "50%": { transform: "rotate(-2deg)" },
+          "75%": { transform: "rotate(-6deg)" },
+          "100%": { transform: "rotate(-4deg)" },
+        },
         wiggler: {
           "0%": { transform: "translate(0px,0px)" },
           "25%": { transform: "translate(20px,0px)" },
           "50%": { transform: "translate(10px,0px)" },
           "75%": { transform: "translate(15px,0px)" },
+          "100%": { transform: "translate(0px,0px)" },
+        },
+        wiggleb: {
+          "0%": { transform: "translate(0px,0px)" },
+          "25%": { transform: "translate(0px,8px)" },
+          "50%": { transform: "translate(0px,5px)" },
+          "75%": { transform: "translate(0px,10px)" },
           "100%": { transform: "translate(0px,0px)" },
         },
       },
