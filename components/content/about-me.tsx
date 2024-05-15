@@ -4,19 +4,19 @@ import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div className="w-[900px] h-[500px] relative flex justify-center ">
-      <section className="absolute  rotate-2 -z-10 right-5 top-4 lg:right-8 lg:top-4">
-        <div className=" w-[780px] h-[400px] bg-stone-200 border border-stone-300"></div>
+    <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[900px] h-full md:h-[500px] relative flex justify-center">
+      <section className="absolute rotate-2 -z-10 right-5 md:right-8 top-4">
+        <div className=" w-[300px] h-[730px] sm:w-[600px] sm:h-[770px] md:w-[700px] lg:w-[780px] md:h-[400px] bg-stone-200 border border-stone-300"></div>
       </section>
 
-      <section className=" w-fit h-fit bg-white p-3 border-[0.5px] md:border border-stone-300 font-mono text-sm text-sky-300 z-20 relative">
+      <section className=" w-full md:w-fit h-fit bg-white p-3 border-[0.5px] md:border border-stone-300 font-mono text-xs lg:text-sm text-sky-300 z-20 relative">
         <svg
           width="64"
           height="73"
           viewBox="0 0 64 73"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="absolute -top-10 -left-5 z-30 hidden md:flex"
+          className="absolute -top-10 -left-5 z-30 flex"
         >
           <rect
             x="28.304"
@@ -41,28 +41,42 @@ const AboutMe = () => {
             fill="#F9F4E6"
           />
         </svg>
-        <div className="w-full h-full border border-stone-300 grid grid-cols-3 ">
-          <div className=" col-span-2 grid grid-cols-2">
-            <div className=" col-span-2 border border-stone-300 p-5">
-              <p>Name</p>
-              <h1 className="text-2xl text-center py-5 text-stone-900">
-                Goldie Tiara Putri
-              </h1>
+        <div className="w-full h-full border border-stone-300 grid grid-cols-1 md:grid-cols-3 ">
+          <div className=" md:col-span-2 grid grid-cols-1 md:grid-cols-2">
+            <div className=" md:col-span-2 border border-stone-300 p-3 md:p-5 flex items-center flex-col text-left w-full">
+              <Image
+                src={"/profile-pic.jpg"}
+                alt="photo"
+                width={180}
+                height={280}
+                className="flex md:hidden border-stone-300 border p-3 mb-5 sm:mb-8 sm:mt-3"
+              ></Image>
+              <p className="w-full">Name</p>
+              <Image
+                src={"/svg/about-me/goldie-tiara.svg"}
+                alt="goldie tiara"
+                width={200}
+                height={200}
+                className=" w-full text-2xl md:text-center md:py-5 text-stone-900 px-5 py-3 sm:px-[100px]"
+              />
             </div>
             {Intro.map((v, i) => {
               return (
-                <div className="border border-stone-300 p-5 flex flex-col">
+                <div
+                  className="border border-stone-300 p-3 md:p-5 flex flex-col"
+                  key={i}
+                >
                   <p>{v.h}</p>
-                  <h1 className=" pt-3 pb-5 pr-5 text-stone-900 indent-5">
+                  <h1 className=" pt-3 pb-2 md:pb-5 pr-0 lg:pr-5 text-stone-900 indent-2 lg:indent-5">
                     {v.p}
                   </h1>
                 </div>
               );
             })}
           </div>
-          <div className=" grid grid-cols-1 grid-rows-3">
+          <div className=" grid grid-cols-1 md:grid-rows-3">
             {/* FIX LATER */}
-            <div className="flex items-center justify-center p-3 row-span-3 border border-stone-300">
+            <div className="hidden md:flex items-center justify-center p-3 sm:row-span-2 md:row-span-3 border border-stone-300">
               <Image
                 src={"/profile-pic.jpg"}
                 alt="photo"
@@ -71,9 +85,9 @@ const AboutMe = () => {
                 className="border-stone-300 border p-3"
               ></Image>
             </div>
-            <div className="border border-stone-300 p-5 flex flex-col">
+            <div className="border border-stone-300 p-3 md:p-5 flex flex-col h-fit">
               <p>Location</p>
-              <h1 className=" pt-3 pb-5 pr-5 text-stone-900 indent-5">
+              <h1 className=" pt-3 pb-2 md:pb-5 pr-5 text-stone-900 indent-2 md:indent-5">
                 Jakarta, ID
               </h1>
               <svg
@@ -82,7 +96,7 @@ const AboutMe = () => {
                 viewBox="0 0 63 44"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                className=" absolute bottom-24 right-1 z-30"
+                className=" absolute  bottom-[73px] md:bottom-24 right-1 z-30"
               >
                 <rect
                   x="23.2322"

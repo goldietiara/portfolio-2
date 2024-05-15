@@ -25,7 +25,37 @@ export const ProjectImg = [
   { projectImg: "/twitter.png" },
 ];
 
-export const AllProject = [
+export const ThreeProjects = [
+  {
+    id: "Project 1",
+    projectName: "Todo-List",
+    description:
+      "Todo List is developer first app in every framework, it is commonly used as a method to introduce how a CRUD operations being implement in certain framework",
+    stack: ["react", "mongodb", "next", "prisma"],
+    images: "todo.png",
+    link: "https://todos-goldietiaraid-gmailcom.vercel.app",
+  },
+  {
+    id: "Project 2",
+    projectName: "E-commerce",
+    description:
+      "Track and Merge data. Using cookies to temporarily handle data as an anonymous cart. The anonymous cart will be merged into the database once the user finally logged in / create their account.",
+    stack: ["react", "mongodb", "next", "prisma"],
+    images: "e-commerce.png",
+    link: "https://nextjs-ecommerce-goldietiaraid-gmailcom.vercel.app/",
+  },
+  {
+    id: "Project 3",
+    projectName: "Social-Media",
+    description:
+      "Learning more complex database for comments & replied sub-comments, making the sub-comments as a new parent. User can now comment another sub comments and make them as a new thread/tweet. This logic can be implemented using recursion.",
+    stack: ["react", "mongodb", "next", "prisma", "clerk"],
+    images: "twitter.png",
+    link: "https://twitter-clone-goldietiaraid-gmailcom.vercel.app",
+  },
+];
+
+export const AllProjects = [
   {
     projectName: "React Hooks",
     description:
@@ -62,12 +92,12 @@ export const AllProject = [
 
 //   CONTACT
 export const contacts = [
-  {
-    name: "email",
-    logo: "",
-    contact: "Goldietiara.acc@gmail.com",
-    link: "Goldietiara.acc@gmail.com",
-  },
+  // {
+  //   name: "Email",
+  //   logo: "",
+  //   contact: "Goldietiara.acc@gmail.com",
+  //   link: "Goldietiara.acc@gmail.com",
+  // },
   {
     name: "LinkedIn",
     logo: "",
