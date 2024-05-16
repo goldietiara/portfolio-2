@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <nav className=" bg-transparent py-5 md px-5 h-fit w-full flex justify-between items-center max-w-7xl mx-auto">
+    <nav className=" bg-white/80 py-5 md px-5 h-fit w-full flex justify-between items-center max-w-7xl mx-auto">
       <Link href={"/"} className=" text-xl font-mono text-gray-700">
         Goldie Portfolio
       </Link>

@@ -17,8 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} overscroll-none`}>
-        <NavBar></NavBar>
+      <body className={`${inter.className} overscroll-none relative`}>
+        <div className="w-full fixed top-0 z-[80]">
+          <NavBar></NavBar>
+        </div>
         <div className="max-w-5xl mx-auto mb-5 md:my-32">{children}</div>
       </body>
     </html>
