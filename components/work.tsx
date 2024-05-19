@@ -60,9 +60,9 @@ const WorkThumbnail = ({
               />
             </div>
             <div className=" bg-white border border-gray-300 px-5 py-3 flex gap-3">
-              {stack.map((v) => {
+              {stack.map((v, i) => {
                 return (
-                  <div className="group relative flex justify-center">
+                  <div className="group relative flex justify-center" key={i}>
                     <Image
                       src={`/svg/icons/${v}.svg`}
                       alt="stack"
