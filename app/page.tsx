@@ -1,21 +1,31 @@
 import AboutMe from "@/components/content/about-me";
 import Work from "@/components/content/work";
 import Contact from "@/components/content/contact";
+import Intro from "@/components/content/intro";
 
 export default function Home() {
   return (
     <main>
-      <div className="absolute p-10 w-full right-0 left-0 z-10">
-        <div className="flex flex-col items-center gap-16">
-          <AboutMe />
-          <Work />
-          <Contact />
+      <div className="absolute p-10 w-full right-0 left-0 z-10 top-[100px] md:top-0">
+        <div className="flex flex-col items-center gap-32  mb-24">
+          <section id="intro">
+            <Intro />
+          </section>
+          <section id="work">
+            <Work />
+          </section>
+          <section id="about">
+            <AboutMe />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
         </div>
       </div>
 
       <div className="w-full h-full flex justify-center items-center opacity-50 md:opacity-100 z-0">
         <div className="hidden lg:grid grid-cols-12 w-full h-full border-sky-200 border-[0.5px]">
-          {Array.from({ length: 12 * 24 }, (_, i) => (
+          {Array.from({ length: 12 * 29 }, (_, i) => (
             <div
               key={i}
               className="border-sky-200 border-[0.5px] w-full h-8 sm:h-14 md:h-16 lg:h-20"
@@ -23,7 +33,7 @@ export default function Home() {
           ))}
         </div>
         <div className="hidden md:grid lg:hidden grid-cols-12 w-full h-full border-sky-200 border-[0.5px]">
-          {Array.from({ length: 12 * 32 }, (_, i) => (
+          {Array.from({ length: 12 * 39 }, (_, i) => (
             <div
               key={i}
               className="border-sky-200 border-[0.5px] w-full h-8 sm:h-14 md:h-16 lg:h-20"
@@ -31,7 +41,7 @@ export default function Home() {
           ))}
         </div>
         <div className="hidden sm:grid md:hidden grid-cols-12 w-full h-full border-sky-200 border-[0.5px]">
-          {Array.from({ length: 12 * 41 }, (_, i) => (
+          {Array.from({ length: 12 * 51 }, (_, i) => (
             <div
               key={i}
               className="border-sky-200 border-[0.5px] w-full h-8 sm:h-14 md:h-16 lg:h-20"
@@ -39,7 +49,7 @@ export default function Home() {
           ))}
         </div>
         <div className="grid sm:hidden grid-cols-12 w-full h-full border-sky-200 border-[0.5px]">
-          {Array.from({ length: 12 * 70 }, (_, i) => (
+          {Array.from({ length: 12 * 92 }, (_, i) => (
             <div
               key={i}
               className="border-sky-200 border-[0.5px] w-full h-8 sm:h-14 md:h-16 lg:h-20"

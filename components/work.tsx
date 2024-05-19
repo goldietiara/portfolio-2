@@ -51,8 +51,13 @@ const WorkThumbnail = ({
             <p>{description}</p>
           </div>
           <div className="flex">
-            <div className="bg-gray-200 p-3 flex justify-center items-center">
-              <p className=" -rotate-[10deg]">Stack</p>
+            <div className="bg-gray-200 w-[70px] p-3 flex justify-center items-center">
+              <Image
+                src={"/svg/work/stack.svg"}
+                alt="tech-stack"
+                width={100}
+                height={100}
+              />
             </div>
             <div className=" bg-white border border-gray-300 px-5 py-3 flex gap-3">
               {stack.map((v) => {

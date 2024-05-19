@@ -162,7 +162,7 @@ const Work = () => {
             <div className="flex lg:hidden absolute w-[100px] md:w-fit py-2 px-4 pt-12 bg-teal-200 -bottom-[35px] left-[10px] md:left-[50px] hover:-bottom-[45px] hover:animate-wiggleb text-cyan-700  transition-all cursor-pointer z-50">
               <p>Project 1</p>
             </div>
-            <div className="flex  lg:hidden absolute w-fit py-2 px-4 pt-12 bg-sky-200 -bottom-[58px] left-[60px] md:left-[180px] hover:-bottom-[68px] hover:animate-wiggleb text-blue-500 transition-all cursor-pointer z-40">
+            <div className="flex  lg:hidden absolute w-fit py-2 px-4 pt-24 bg-sky-200 -bottom-[58px] left-[60px] md:left-[180px] hover:-bottom-[68px] hover:animate-wiggleb text-blue-500 transition-all cursor-pointer z-40">
               <p>Project 2</p>
             </div>
           </div>

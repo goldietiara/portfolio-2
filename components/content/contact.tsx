@@ -8,8 +8,8 @@ import { contacts } from "@/constants";
 
 const Contact = () => {
   return (
-    <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[1000px] h-full font-mono text-sm mt-32 flex flex-wrap gap-10">
-      <div className="w-fit h-fit p-5 pt-14 sm:pt-28 mx-10 bg-stone-50 rounded-md border border-stone-300 flex flex-wrap relative">
+    <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[1000px] h-full font-mono text-sm flex flex-wrap gap-10">
+      <div className="w-full md:w-fit h-fit p-5 pt-16 sm:pt-28 mx-auto bg-stone-50 rounded-md border border-stone-300 flex flex-wrap relative">
         <section className="absolute -top-[15px] -left-[15px] z-20 flex">
           <div className=" w-fit h-fit bg-teal-500 py-3 px-2 md:px-4 relative -rotate-3">
             <div className=" absolute top-[0px] -left-[30px] bg-gray-300/40 w-[100px] h-[25px] -rotate-[30deg] z-30"></div>
@@ -31,18 +31,16 @@ const Contact = () => {
             />
           </div>
         </section>
-        <section className=" flex flex-col gap-10">
-          <div className="relative w-fit">
-            <a
-              className=" w-fit absolute text-sm sm:text-2xl lg:text-3xl font-serif font-extralight italic text-stone-700 bg-yellow-200 p-2 md:p-3 lg:p-5 rounded-e-full origin-left -rotate-2 hover:-rotate-[4deg] hover:animate-wiggles transition-all ease-in-out duration-150 cursor-pointer"
-              href={`mailto:goldietiara.acc@gmail.com`}
-            >
+        <section className=" flex flex-col gap-5 md:gap-10 w-full items-center sm:items-start">
+          <a
+            className="group w-fit text-sm sm:text-2xl lg:text-3xl font-serif font-extralight italic text-pink-200 bg-pink-200 p-2 md:p-3 lg:p-5 rounded-e-full cursor-pointer relative"
+            href={`mailto:goldietiara.acc@gmail.com`}
+          >
+            <div className="absolute bottom-0 left-0 text-stone-700 bg-yellow-200 p-2 md:p-3 lg:p-5 rounded-e-full origin-left -rotate-[2deg] group-hover:-rotate-[4deg] group-hover:animate-wigglet transition-all ease-in-out duration-150 cursor-pointer z-50">
               Goldietiara.acc@gmail.com
-            </a>
-            <p className=" w-fit text-sm sm:text-2xl lg:text-3xl font-serif font-extralight italic text-pink-200 bg-pink-200 p-2 md:p-3 lg:p-5 rounded-e-full cursor-default">
-              Goldietiara.acc@gmail.com
-            </p>
-          </div>
+            </div>
+            Goldietiara.acc@gmail.com
+          </a>
           <div className=" bg-white p-2 sm:p-5 border border-stone-300 h-fit w-full sm:w-fit row-start-1">
             <div className=" bg-stone-100 flex justify-between gap-5 sm:gap-10">
               <div className="w-full p-2 sm:p-5 font-serif text-stone-700 flex flex-col items-center sm:justify-between gap-5 md:gap-0">

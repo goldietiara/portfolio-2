@@ -43,7 +43,8 @@ const AboutMe = () => {
         </svg>
         <div className="w-full h-full border border-stone-300 grid grid-cols-1 md:grid-cols-3 ">
           <div className=" md:col-span-2 grid grid-cols-1 md:grid-cols-2">
-            <div className=" md:col-span-2 border border-stone-300 p-3 md:p-5 flex items-center flex-col text-left w-full">
+            <div className=" md:col-span-2 border border-stone-300 p-3 md:p-5 flex items-center flex-col text-left w-full relative">
+              <p className="w-full">Name</p>
               <Image
                 src={"/profile-pic.jpg"}
                 alt="photo"
@@ -51,7 +52,6 @@ const AboutMe = () => {
                 height={280}
                 className="flex md:hidden border-stone-300 border p-3 mb-5 sm:mb-8 sm:mt-3"
               ></Image>
-              <p className="w-full">Name</p>
               <Image
                 src={"/svg/about-me/goldie-tiara.svg"}
                 alt="goldie tiara"
@@ -59,6 +59,23 @@ const AboutMe = () => {
                 height={200}
                 className=" w-full text-2xl md:text-center md:py-5 text-stone-900 px-5 py-3 sm:px-[100px]"
               />
+              {/* cv */}
+              <div className=" flex md:hidden absolute bottom-[45px] -right-[40px] w-fit h-fit group hover:cursor-pointer rotate-[45deg]">
+                <Image
+                  src={"/svg/about-me/cv-button.svg"}
+                  alt="svg"
+                  width={100}
+                  height={100}
+                  className=" origin-bottom rotate-0 group-hover:animate-wiggle2 group-hover:-rotate-12 duration-150 ease-in-out transition-all"
+                />
+                <Image
+                  src={"/svg/about-me/cv.svg"}
+                  alt="svg"
+                  width={100}
+                  height={100}
+                  className=" origin-bottom-right absolute bottom-0 rotate-0 group-hover:animate-wiggle group-hover:rotate-12  duration-150 ease-in-out transition-all"
+                />
+              </div>
             </div>
             {Intro.map((v, i) => {
               return (
