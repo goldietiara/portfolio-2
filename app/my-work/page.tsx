@@ -5,7 +5,7 @@ const MyWork = () => {
   return (
     <main>
       <div className="absolute p-10 w-full right-0 left-0 z-10 top-[100px] md:top-0">
-        <div className="flex flex-col items-center gap-40">
+        <div className="flex flex-col-reverse items-center gap-40">
           {AllProjects.map((v) => {
             return (
               <WorkThumbnail
