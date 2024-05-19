@@ -111,3 +111,17 @@ export const contacts = [
     link: "https://github.com/goldietiara",
   },
 ];
+
+//   INTRO
+export const intro = [
+  { name: "im-a", width: 92, height: 42 },
+  { name: "front-end", width: 165, height: 42 },
+  { name: "software-engineer", width: 278, height: 42 },
+  { name: "who-loves", width: 153, height: 42 },
+  { name: "learning-new-things", width: 295, height: 42 },
+  { name: "and", width: 74, height: 42 },
+  { name: "design-for-fun", width: 213, height: 42 },
+  { name: "lets-create-something", width: 345, height: 42 },
+  { name: "amazing", width: 160, height: 42 },
+  { name: "together", width: 201, height: 42 },
+];

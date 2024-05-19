@@ -16,15 +16,21 @@ const NavBar = () => {
         >
           <p>Work</p>
         </Link>
-        <button className=" bg-sky-300 py-2 px-5 rotate-0 hover:animate-wiggle2 hover:-rotate-12 duration-150 ease-in-out transition-all cursor-pointer">
+        <Link
+          href={"#about"}
+          className=" bg-sky-300 py-2 px-5 rotate-0 hover:animate-wiggle2 hover:-rotate-12 duration-150 ease-in-out transition-all cursor-pointer"
+        >
           <p>About</p>
-        </button>
+        </Link>
         <button className=" bg-sky-400 py-2 px-5 rotate-0 hover:animate-wiggle2 hover:-rotate-12 duration-150 ease-in-out transition-all cursor-pointer">
-          <p>resume</p>
+          <p>CV</p>
         </button>
-        <button className=" bg-sky-500 py-2 px-5 rotate-0 hover:animate-wiggle hover:rotate-12 duration-150 ease-in-out transition-all cursor-pointer">
+        <Link
+          href={"#contact"}
+          className=" bg-sky-500 py-2 px-5 rotate-0 hover:animate-wiggle hover:rotate-12 duration-150 ease-in-out transition-all cursor-pointer"
+        >
           <p>Contact</p>
-        </button>
+        </Link>
       </div>
     </nav>
   );
