@@ -8,7 +8,7 @@ import { contacts } from "@/constants";
 
 const Contact = () => {
   return (
-    <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[1000px] h-full font-mono text-sm flex flex-wrap gap-10">
+    <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[1000px] h-full font-mono text-sm flex flex-wrap gap-10 pt-32">
       <div className="w-full md:w-fit h-fit p-5 pt-16 sm:pt-28 mx-auto bg-stone-50 rounded-md border border-stone-300 flex flex-wrap relative">
         <section className="absolute -top-[15px] -left-[15px] z-20 flex">
           <div className=" w-fit h-fit bg-teal-500 py-3 px-2 md:px-4 relative -rotate-3">

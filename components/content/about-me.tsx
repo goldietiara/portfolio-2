@@ -1,11 +1,12 @@
 "use client";
+import { openPdf } from "@/composables/utils";
 import { Intro } from "@/constants";
 import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[900px] h-full md:h-[500px] relative flex justify-center">
-      <section className="absolute rotate-2 -z-10 right-5 md:right-8 top-4">
+    <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[900px] h-full md:h-[500px] relative flex justify-center pt-32">
+      <section className="absolute rotate-2 -z-10 right-5 md:right-8 top-4 pt-32">
         <div className=" w-[300px] h-[730px] sm:w-[600px] sm:h-[770px] md:w-[700px] lg:w-[780px] md:h-[400px] bg-stone-200 border border-stone-300"></div>
       </section>
 
@@ -60,7 +61,10 @@ const AboutMe = () => {
                 className=" w-full text-2xl md:text-center md:py-5 text-stone-900 px-5 py-3 sm:px-[100px]"
               />
               {/* cv */}
-              <div className=" flex md:hidden absolute bottom-[45px] -right-[40px] w-fit h-fit group hover:cursor-pointer rotate-[45deg]">
+              <button
+                onClick={openPdf}
+                className=" flex md:hidden absolute bottom-[45px] -right-[40px] w-fit h-fit group hover:cursor-pointer rotate-[45deg]"
+              >
                 <Image
                   src={"/svg/about-me/cv-button.svg"}
                   alt="svg"
@@ -75,7 +79,7 @@ const AboutMe = () => {
                   height={100}
                   className=" origin-bottom-right absolute bottom-0 rotate-0 group-hover:animate-wiggle group-hover:rotate-12  duration-150 ease-in-out transition-all"
                 />
-              </div>
+              </button>
             </div>
             {Intro.map((v, i) => {
               return (

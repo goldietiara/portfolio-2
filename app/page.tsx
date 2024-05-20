@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <div className="absolute p-10 w-full right-0 left-0 z-10 top-[100px] md:top-0">
-        <div className="flex flex-col items-center gap-32  mb-24">
+        <div className="flex flex-col items-center gap-16 mb-24">
           <section id="intro">
             <Intro />
           </section>
