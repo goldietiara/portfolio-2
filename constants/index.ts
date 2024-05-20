@@ -1,3 +1,5 @@
+import { delay } from "framer-motion";
+
 // ABOUT
 export const Intro = [
   {
@@ -113,15 +115,52 @@ export const contacts = [
 ];
 
 //   INTRO
+
+export const hello = [
+  { name: "h", svg: "h", size: 100, position: "z-0", x: 0, y: 0 },
+  {
+    name: "e",
+    svg: "e",
+    size: 70,
+    position: "z-10",
+    x: "90",
+    y: "20",
+  },
+  {
+    name: "l",
+    svg: "l-1",
+    size: 80,
+    position: "z-0",
+    x: "153",
+    y: "15",
+  },
+  {
+    name: "l",
+    svg: "l-2",
+    size: 70,
+    position: "z-10",
+    x: "225",
+    y: "0",
+  },
+  {
+    name: "o",
+    svg: "o",
+    size: 70,
+    position: "z-20",
+    x: "285",
+    y: "30",
+  },
+];
+
 export const intro = [
-  { name: "im-a", width: 92, height: 42 },
-  { name: "front-end", width: 165, height: 42 },
-  { name: "software-engineer", width: 278, height: 42 },
-  { name: "who-loves", width: 153, height: 42 },
-  { name: "learning-new-things", width: 295, height: 42 },
-  { name: "and", width: 74, height: 42 },
-  { name: "design-for-fun", width: 213, height: 42 },
-  { name: "lets-create-something", width: 345, height: 42 },
-  { name: "amazing", width: 160, height: 42 },
-  { name: "together", width: 201, height: 42 },
+  { name: "im-a", width: 92, height: 42, delay: 0.25 },
+  { name: "front-end", width: 165, height: 42, delay: 0.5 },
+  { name: "software-engineer", width: 278, height: 42, delay: 1 },
+  { name: "who-loves", width: 153, height: 42, delay: 1.25 },
+  { name: "learning-new-things", width: 295, height: 42, delay: 1.5 },
+  { name: "and", width: 74, height: 42, delay: 1.75 },
+  { name: "design-for-fun", width: 213, height: 42, delay: 2 },
+  { name: "lets-create-something", width: 345, height: 42, delay: 2.25 },
+  { name: "amazing", width: 160, height: 42, delay: 2.5 },
+  { name: "together", width: 201, height: 42, delay: 2.75 },
 ];
