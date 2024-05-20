@@ -33,7 +33,7 @@ export default function Home() {
           ))}
         </div>
         <div className="hidden md:grid lg:hidden grid-cols-12 w-full h-full border-sky-200 border-[0.5px]">
-          {Array.from({ length: 12 * 39 }, (_, i) => (
+          {Array.from({ length: 12 * 40 }, (_, i) => (
             <div
               key={i}
               className="border-sky-200 border-[0.5px] w-full h-8 sm:h-14 md:h-16 lg:h-20"
@@ -41,7 +41,7 @@ export default function Home() {
           ))}
         </div>
         <div className="hidden sm:grid md:hidden grid-cols-12 w-full h-full border-sky-200 border-[0.5px]">
-          {Array.from({ length: 12 * 51 }, (_, i) => (
+          {Array.from({ length: 12 * 55 }, (_, i) => (
             <div
               key={i}
               className="border-sky-200 border-[0.5px] w-full h-8 sm:h-14 md:h-16 lg:h-20"
@@ -49,7 +49,7 @@ export default function Home() {
           ))}
         </div>
         <div className="grid sm:hidden grid-cols-12 w-full h-full border-sky-200 border-[0.5px]">
-          {Array.from({ length: 12 * 92 }, (_, i) => (
+          {Array.from({ length: 12 * 97 }, (_, i) => (
             <div
               key={i}
               className="border-sky-200 border-[0.5px] w-full h-8 sm:h-14 md:h-16 lg:h-20"
