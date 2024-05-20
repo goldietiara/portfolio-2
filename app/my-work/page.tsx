@@ -50,7 +50,7 @@ const MyWork = () => {
 
       <div className="w-full h-full flex justify-center items-center opacity-50 md:opacity-100 z-0">
         <div className="hidden lg:grid grid-cols-12 w-full h-full border-sky-200 border-[0.5px]">
-          {Array.from({ length: 12 * 24 }, (_, i) => (
+          {Array.from({ length: 12 * 30 }, (_, i) => (
             <div
               key={i}
               className="border-sky-200 border-[0.5px] w-full h-8 sm:h-14 md:h-16 lg:h-20"
@@ -58,7 +58,7 @@ const MyWork = () => {
           ))}
         </div>
         <div className="hidden md:grid lg:hidden grid-cols-12 w-full h-full border-sky-200 border-[0.5px]">
-          {Array.from({ length: 12 * 45 }, (_, i) => (
+          {Array.from({ length: 12 * 56 }, (_, i) => (
             <div
               key={i}
               className="border-sky-200 border-[0.5px] w-full h-8 sm:h-14 md:h-16 lg:h-20"
@@ -66,7 +66,7 @@ const MyWork = () => {
           ))}
         </div>
         <div className="hidden sm:grid md:hidden grid-cols-12 w-full h-full border-sky-200 border-[0.5px]">
-          {Array.from({ length: 12 * 52 }, (_, i) => (
+          {Array.from({ length: 12 * 67 }, (_, i) => (
             <div
               key={i}
               className="border-sky-200 border-[0.5px] w-full h-8 sm:h-14 md:h-16 lg:h-20"
@@ -74,7 +74,7 @@ const MyWork = () => {
           ))}
         </div>
         <div className="grid sm:hidden grid-cols-12 w-full h-full border-sky-200 border-[0.5px]">
-          {Array.from({ length: 12 * 99 }, (_, i) => (
+          {Array.from({ length: 12 * 127 }, (_, i) => (
             <div
               key={i}
               className="border-sky-200 border-[0.5px] w-full h-8 sm:h-14 md:h-16 lg:h-20"

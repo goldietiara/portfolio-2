@@ -80,13 +80,8 @@ const Intro = () => {
 
       <motion.div
         initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{
-          type: "spring",
-          stiffness: 120,
-          damping: 20,
-          delay: 0.8,
-        }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.8 }}
         className="w-full flex flex-wrap justify-center gap-2 pt-5"
       >
         {intro.map((v, i) => {
@@ -104,13 +99,8 @@ const Intro = () => {
       <div className="w-full h-full absolute">
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 150,
-            damping: 20,
-            delay: 0.8,
-          }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, delay: 0.8 }}
           className="w-full h-full relative"
         >
           <Image
