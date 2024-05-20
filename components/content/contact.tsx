@@ -5,11 +5,26 @@ import { FaSquareEnvelope } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
 import { contacts } from "@/constants";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
-    <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[1000px] h-full font-mono text-sm flex flex-wrap gap-10 pt-32">
-      <div className="w-full md:w-fit h-fit p-5 pt-16 sm:pt-28 mx-auto bg-stone-50 rounded-md border border-stone-300 flex flex-wrap relative">
+    <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[1000px] h-full font-mono text-sm flex flex-wrap gap-10 pt-48">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+          scale: {
+            type: "spring",
+            damping: 8,
+            stiffness: 100,
+            restDelta: 0.001,
+          },
+        }}
+        className="w-full md:w-fit h-fit p-5 pt-16 sm:pt-28 mx-auto bg-stone-50 rounded-md border border-stone-300 flex flex-wrap relative"
+      >
         <section className="absolute -top-[15px] -left-[15px] z-20 flex">
           <div className=" w-fit h-fit bg-teal-500 py-3 px-2 md:px-4 relative -rotate-3">
             <div className=" absolute top-[0px] -left-[30px] bg-gray-300/40 w-[100px] h-[25px] -rotate-[30deg] z-30"></div>
@@ -89,8 +104,22 @@ const Contact = () => {
             </div>
           </div>
         </section>
-      </div>
-      <section className="relative place-self-start mt-[10px] ml-[15px]">
+      </motion.div>
+      <motion.section
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 0.3,
+          ease: [0, 0.71, 0.2, 1.01],
+          scale: {
+            type: "spring",
+            damping: 8,
+            stiffness: 100,
+            restDelta: 0.001,
+          },
+        }}
+        className="relative place-self-start mt-[10px] ml-[15px]"
+      >
         <div className=" flex w-fit h-fit absolute -top-[10px] -left-[15px]">
           <div className="w-[20px] bg-yellow-300"></div>
           <div className="bg-yellow-100 p-2 px-3 font-serif font-extralight">
@@ -104,7 +133,7 @@ const Contact = () => {
           width={250}
           height={250}
         />
-      </section>
+      </motion.section>
     </div>
   );
 };

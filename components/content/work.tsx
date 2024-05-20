@@ -2,10 +2,25 @@
 import { ProjectImg } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Work = () => {
   return (
-    <div className="w-[300px] sm:w-[600px] md:w-[750px] lg:w-[800px] h-[500px] font-mono text-sm">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.3,
+        ease: [0, 0.71, 0.2, 1.01],
+        scale: {
+          type: "spring",
+          damping: 8,
+          stiffness: 100,
+          restDelta: 0.001,
+        },
+      }}
+      className="w-[300px] sm:w-[600px] md:w-[750px] lg:w-[800px] h-[500px] font-mono text-sm"
+    >
       <div className="h-full grid grid-cols-1 grid-rows-12 lg:grid-rows-1 lg:grid-cols-12">
         <section className="w-full h-full row-span-11 col-span-1 lg:col-span-11 lg:row-span-1 bg-pink-500 relative">
           <div className="absolute w-full h-full bg-stone-800 z-[70] grid grid-cols-4 grid-rows-2">
@@ -193,7 +208,7 @@ const Work = () => {
           <div className="w-full h-[10px] lg:w-[10px]  lg:h-full bg-stone-400" />
         </section>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
