@@ -5,7 +5,7 @@ import { intro, hello } from "@/constants";
 
 const Intro = () => {
   return (
-    <div className="w-[350px] sm:w-[600px] md:w-[750px] lg:w-[800px] h-full font-mono text-sm flex flex-col items-center relative mb-32">
+    <div className="w-[350px] sm:w-[600px] md:w-[750px] lg:w-[800px] h-full font-mono text-sm flex flex-col items-center relative mb-36">
       <div className="w-[360px] h-[130px] relative">
         <motion.div
           initial={{ scale: 0 }}
@@ -80,7 +80,7 @@ const Intro = () => {
 
       <motion.div
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.8 }}
         className="w-full flex flex-wrap justify-center gap-2 pt-5"
       >
@@ -99,7 +99,7 @@ const Intro = () => {
       <div className="w-full h-full absolute">
         <motion.div
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.8 }}
           className="w-full h-full relative"
         >

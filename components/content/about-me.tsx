@@ -1,12 +1,27 @@
 "use client";
 import { openPdf } from "@/composables/utils";
 import { Intro } from "@/constants";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const AboutMe = () => {
   return (
-    <div className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[900px] h-full md:h-[500px] relative flex justify-center pt-32">
-      <section className="absolute rotate-2 -z-10 right-5 md:right-8 top-4 pt-32">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.3,
+        ease: [0, 0.71, 0.2, 1.01],
+        scale: {
+          type: "spring",
+          damping: 8,
+          stiffness: 100,
+          restDelta: 0.001,
+        },
+      }}
+      className="w-[300px] sm:w-[600px] md:w-[700px] lg:w-[900px] h-full md:h-[500px] relative flex justify-center pt-36"
+    >
+      <section className="absolute rotate-2 -z-10 right-5 md:right-8 top-4 pt-36">
         <div className=" w-[300px] h-[730px] sm:w-[600px] sm:h-[770px] md:w-[700px] lg:w-[780px] md:h-[400px] bg-stone-200 border border-stone-300"></div>
       </section>
 
@@ -196,7 +211,7 @@ const AboutMe = () => {
           </div>
         </div>
       </section>
-    </div>
+    </motion.div>
   );
 };
 
