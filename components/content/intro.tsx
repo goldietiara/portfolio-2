@@ -5,7 +5,7 @@ import { intro, hello } from "@/constants";
 
 const Intro = () => {
   return (
-    <div className="w-[300px] sm:w-[600px] md:w-[750px] lg:w-[800px] h-full font-mono text-sm flex flex-col items-center relative">
+    <div className="w-[350px] sm:w-[600px] md:w-[750px] lg:w-[800px] h-full font-mono text-sm flex flex-col items-center relative mb-32">
       <div className="w-[360px] h-[130px] relative">
         <motion.div
           initial={{ scale: 0 }}
@@ -83,7 +83,7 @@ const Intro = () => {
         animate={{ opacity: 1 }}
         transition={{
           type: "spring",
-          stiffness: 150,
+          stiffness: 120,
           damping: 20,
           delay: 0.8,
         }}
@@ -125,7 +125,7 @@ const Intro = () => {
             alt={`nuxt`}
             height={40}
             width={40}
-            className="absolute bottom-[50px] -right-[10px]"
+            className="absolute bottom-[45px] -right-[10px] md:-right-[30px]"
           />
           <Image
             src={`/svg/icons/next.svg`}
@@ -143,7 +143,7 @@ const Intro = () => {
           />
           <Image
             src={`/svg/icons/farmer-motion.svg`}
-            alt={`figma`}
+            alt={`farmer-motion`}
             height={40}
             width={40}
             className="absolute top-[115px] -left-[10px] md:top-[70px] md:left-[0px]"

@@ -1,5 +1,3 @@
-import { delay } from "framer-motion";
-
 // ABOUT
 export const Intro = [
   {
@@ -59,28 +57,12 @@ export const ThreeProjects = [
 
 export const AllProjects = [
   {
-    projectName: "React Hooks",
+    projectName: "Spotify-Lite",
     description:
-      "Next.js is built on top of React. Understanding hooks is essential for effective component development and state management. React hooks such as useState, useEffect, and useTransition allow developer to manage component state and side effects such as loading state, dark mode and many more.",
-    stack: ["react", "next"],
-    images: "react-doc.png",
-    link: "https://react-hooks-documentation-goldietiaraid-gmailcom.vercel.app",
-  },
-  {
-    projectName: "Todo-List",
-    description:
-      "Todo List is developer first app in every framework, it is commonly used as a method to introduce how a CRUD operations being implement in certain framework",
-    stack: ["react", "mongodb", "next", "prisma"],
-    images: "todo.png",
-    link: "https://todos-goldietiaraid-gmailcom.vercel.app",
-  },
-  {
-    projectName: "E-commerce",
-    description:
-      "Track and Merge data. Using cookies to temporarily handle data as an anonymous cart. The anonymous cart will be merged into the database once the user finally logged in / create their account.",
-    stack: ["react", "mongodb", "next", "prisma"],
-    images: "e-commerce.png",
-    link: "https://nextjs-ecommerce-goldietiaraid-gmailcom.vercel.app/",
+      "I recently embarked on a project to learn Nuxt, a framework based on Vue.js. Utilizing Pinia as the store library, I tackled the challenge of working with a more complex database. This experience broadened my understanding of modern web development and state management.",
+    stack: ["vue", "nuxt", "pinia", "prisma", "supabase"],
+    images: "spotify-lite.png",
+    link: "https://spotifylite-goldietiaraidgmailcoms-projects.vercel.app",
   },
   {
     projectName: "Twitter-Lite",
@@ -91,12 +73,28 @@ export const AllProjects = [
     link: "https://twitter-clone-goldietiaraid-gmailcom.vercel.app",
   },
   {
-    projectName: "Spotify-Lite",
+    projectName: "E-commerce",
     description:
-      "I recently embarked on a project to learn Nuxt, a framework based on Vue.js. Utilizing Pinia as the store library, I tackled the challenge of working with a more complex database. This experience broadened my understanding of modern web development and state management.",
-    stack: ["vue", "nuxt", "pinia", "prisma", "supabase"],
-    images: "spotify-lite.png",
-    link: "https://spotifylite-goldietiaraidgmailcoms-projects.vercel.app",
+      "Track and Merge data. Using cookies to temporarily handle data as an anonymous cart. The anonymous cart will be merged into the database once the user finally logged in / create their account.",
+    stack: ["react", "mongodb", "next", "prisma"],
+    images: "e-commerce.png",
+    link: "https://nextjs-ecommerce-goldietiaraid-gmailcom.vercel.app/",
+  },
+  {
+    projectName: "Todo-List",
+    description:
+      "Todo List is developer first app in every framework, it is commonly used as a method to introduce how a CRUD operations being implement in certain framework",
+    stack: ["react", "mongodb", "next", "prisma"],
+    images: "todo.png",
+    link: "https://todos-goldietiaraid-gmailcom.vercel.app",
+  },
+  {
+    projectName: "React Hooks",
+    description:
+      "Next.js is built on top of React. Understanding hooks is essential for effective component development and state management. React hooks such as useState, useEffect, and useTransition allow developer to manage component state and side effects such as loading state, dark mode and many more.",
+    stack: ["react", "next"],
+    images: "react-doc.png",
+    link: "https://react-hooks-documentation-goldietiaraid-gmailcom.vercel.app",
   },
 ];
 
@@ -168,7 +166,8 @@ export const intro = [
   { name: "learning-new-things", width: 295, height: 42, delay: 1.5 },
   { name: "and", width: 74, height: 42, delay: 1.75 },
   { name: "design-for-fun", width: 213, height: 42, delay: 2 },
-  { name: "lets-create-something", width: 345, height: 42, delay: 2.25 },
+  { name: "lets-create", width: 187, height: 42, delay: 2.25 },
   { name: "amazing", width: 160, height: 42, delay: 2.5 },
+  { name: "things", width: 139, height: 42, delay: 2.5 },
   { name: "together", width: 201, height: 42, delay: 2.75 },
 ];

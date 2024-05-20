@@ -1,23 +1,51 @@
+"use client";
+import { motion } from "framer-motion";
 import WorkThumbnail from "@/components/work";
 import { AllProjects } from "@/constants";
 
 const MyWork = () => {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
   return (
     <main>
       <div className="absolute p-10 w-full right-0 left-0 z-10 top-[100px] md:top-0">
-        <div className="flex flex-col-reverse items-center gap-40">
-          {AllProjects.map((v) => {
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          className="flex flex-col items-center gap-40"
+        >
+          {AllProjects.map((v, i) => {
             return (
-              <WorkThumbnail
-                projectName={v.projectName}
-                description={v.description}
-                stack={v.stack}
-                images={v.images}
-                link={v.link}
-              />
+              <motion.div variants={item} key={i}>
+                <WorkThumbnail
+                  projectName={v.projectName}
+                  description={v.description}
+                  stack={v.stack}
+                  images={v.images}
+                  link={v.link}
+                />
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>{" "}
       </div>
 
       <div className="w-full h-full flex justify-center items-center opacity-50 md:opacity-100 z-0">

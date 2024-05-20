@@ -89,6 +89,7 @@ const WorkThumbnail = ({
               width={400}
               height={400}
               className="z-10"
+              priority
             />
             <div className="absolute flex gap-3 -bottom-[35px] -right-[15px] z-20 bg-white border border-gray-300 px-5 py-3">
               <button
