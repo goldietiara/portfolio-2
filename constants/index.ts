@@ -83,12 +83,20 @@ export const AllProjects = [
     link: "https://nextjs-ecommerce-goldietiaraid-gmailcom.vercel.app/",
   },
   {
-    projectName: "Social-Media",
+    projectName: "Twitter-Lite",
     description:
       "Learning more complex database for comments & replied sub-comments, making the sub-comments as a new parent. User can now comment another sub comments and make them as a new thread/tweet. This logic can be implemented using recursion.",
     stack: ["react", "mongodb", "next", "prisma", "clerk"],
     images: "twitter.png",
     link: "https://twitter-clone-goldietiaraid-gmailcom.vercel.app",
+  },
+  {
+    projectName: "Spotify-Lite",
+    description:
+      "I recently embarked on a project to learn Nuxt, a framework based on Vue.js. Utilizing Pinia as the store library, I tackled the challenge of working with a more complex database. This experience broadened my understanding of modern web development and state management.",
+    stack: ["vue", "nuxt", "pinia", "prisma", "supabase"],
+    images: "spotify-lite.png",
+    link: "https://spotifylite-goldietiaraidgmailcoms-projects.vercel.app",
   },
 ];
 
