@@ -19,6 +19,7 @@ const config: Config = {
         wiggler: "wiggler 1s ease-in-out ",
         wiggleb: "wiggleb 1s ease-in-out ",
         wigglet: "wigglet 1s ease-in-out ",
+        blink: "blink 0.5s ease-in ",
       },
       keyframes: {
         wiggle: {
@@ -56,6 +57,13 @@ const config: Config = {
           "50%": { transform: "translate(0px,5px)" },
           "75%": { transform: "translate(0px,10px)" },
           "100%": { transform: "translate(0px,0px)" },
+        },
+        blink: {
+          "0%": { opacity: "100%" },
+          // "25%": { opacity: "0%" },
+          "50%": { opacity: "0%" },
+          // "75%": { opacity: "0%" },
+          "100%": { opacity: "100%" },
         },
       },
     },
