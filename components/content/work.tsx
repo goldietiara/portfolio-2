@@ -166,25 +166,25 @@ const Work = () => {
         <section className="flex flex-col lg:flex-row text-xs md:text-sm">
           <div className="w-full h-[10px] lg:w-[10px] lg:h-full relative">
             <div className="absolute w-full h-full bg-stone-100 z-[60]"></div>
-            <div className=" hidden lg:flex lg:justify-end absolute py-3 px-5 pl-14 w-[180px] bg-teal-200 -right-[130px] hover:-right-[150px] bottom-[380px] text-cyan-700 hover:animate-wiggler transition-all cursor-pointer z-40">
+            <div className=" hidden lg:flex lg:justify-end absolute py-3 px-5 pl-14 w-[180px] bg-teal-200 -right-[130px] hover:-right-[150px] bottom-[380px] text-cyan-700 hover:animate-wiggler transition-all  z-40">
               <p>Project 1</p>
             </div>
-            <div className=" hidden lg:flex lg:justify-end absolute py-3 px-5 pl-14 w-[180px] bg-sky-200 -right-[130px] hover:-right-[150px] bottom-[300px] text-blue-500 hover:animate-wiggler transition-all cursor-pointer z-40">
+            <div className=" hidden lg:flex lg:justify-end absolute py-3 px-5 pl-14 w-[180px] bg-sky-200 -right-[130px] hover:-right-[150px] bottom-[300px] text-blue-500 hover:animate-wiggler transition-all  z-40">
               <p>Project 2</p>
             </div>
-            <div className="flex lg:hidden absolute w-[100px] md:w-fit py-2 px-4 pt-12 bg-teal-200 -bottom-[35px] left-[10px] md:left-[50px] hover:-bottom-[45px] hover:animate-wiggleb text-cyan-700  transition-all cursor-pointer z-50">
+            <div className="flex lg:hidden absolute w-[100px] md:w-fit py-2 px-4 pt-12 bg-teal-200 -bottom-[35px] left-[10px] md:left-[50px] hover:-bottom-[45px] hover:animate-wiggleb text-cyan-700  transition-all  z-50">
               <p>Project 1</p>
             </div>
-            <div className="flex  lg:hidden absolute w-fit py-2 px-4 pt-24 bg-sky-200 -bottom-[58px] left-[60px] md:left-[180px] hover:-bottom-[68px] hover:animate-wiggleb text-blue-500 transition-all cursor-pointer z-40">
+            <div className="flex  lg:hidden absolute w-fit py-2 px-4 pt-24 bg-sky-200 -bottom-[58px] left-[60px] md:left-[180px] hover:-bottom-[68px] hover:animate-wiggleb text-blue-500 transition-all  z-40">
               <p>Project 2</p>
             </div>
           </div>
           <div className="w-full h-[10px] lg:w-[10px]  lg:h-full relative">
             <div className="absolute w-full h-full bg-stone-400 z-30"></div>
-            <div className="hidden lg:flex lg:justify-end py-3 px-5 pl-14 absolute w-[180px] bg-yellow-200 -right-[130px] hover:-right-[150px] bottom-[180px] text-stone-500 hover:animate-wiggler transition-all cursor-pointer z-20">
+            <div className="hidden lg:flex lg:justify-end py-3 px-5 pl-14 absolute w-[180px] bg-yellow-200 -right-[130px] hover:-right-[150px] bottom-[180px] text-stone-500 hover:animate-wiggler transition-all  z-20">
               <p>Project 3</p>
             </div>
-            <div className="flex lg:hidden absolute w-fit py-2 px-4 pt-28 bg-yellow-200 -bottom-[70px] right-[100px] sm:right-[300px] hover:-bottom-[80px] hover:animate-wiggleb text-stone-500 transition-all cursor-pointer z-20">
+            <div className="flex lg:hidden absolute w-fit py-2 px-4 pt-28 bg-yellow-200 -bottom-[70px] right-[100px] sm:right-[300px] hover:-bottom-[80px] hover:animate-wiggleb text-stone-500 transition-all  z-20">
               <p>Project 3</p>
             </div>
           </div>
