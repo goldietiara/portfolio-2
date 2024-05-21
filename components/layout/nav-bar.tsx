@@ -10,10 +10,28 @@ const NavBar = () => {
   const isActive = pathName === "/my-work";
 
   return (
-    <nav className=" bg-white/80 py-5 md px-5 h-fit w-full flex justify-between items-center max-w-7xl mx-auto">
+    <nav className=" bg-white/80 py-5 md px-5 h-fit w-full flex justify-center md:justify-between items-center max-w-7xl mx-auto">
       <Link
         href={"/"}
-        className=" text-xl font-mono text-gray-700 relative h-fit w-fit group"
+        className=" text-xl font-mono text-gray-700 relative h-fit w-fit group flex md:hidden"
+      >
+        <Image
+          src={"/svg/nav-bar/goldie-portfolio-2.svg"}
+          alt="goldie-portfolio"
+          width={270}
+          height={27}
+          className=" absolute hidden group-hover:flex group-hover:animate-blink"
+        />
+        <Image
+          src={"/svg/nav-bar/goldie-portfolio.svg"}
+          alt="goldie-portfolio"
+          width={270}
+          height={27}
+        />
+      </Link>
+      <Link
+        href={"/"}
+        className=" text-xl font-mono text-gray-700 relative h-fit w-fit group hidden md:flex"
       >
         <Image
           src={"/svg/nav-bar/goldie-portfolio-2.svg"}
@@ -28,8 +46,6 @@ const NavBar = () => {
           width={347}
           height={30}
         />
-
-        {/* Goldie Portfolio */}
       </Link>
       <div className="md:flex text-white font-mono text-sm hidden">
         <Link
