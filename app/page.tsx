@@ -8,10 +8,10 @@ export default function Home() {
     <main>
       <div className="absolute p-10 w-full right-0 left-0 z-10 top-[100px] md:top-0">
         <div className="flex flex-col items-center mb-24">
-          <section id="intro">
+          <section id="intro" className=" mb=0 md:mb-36">
             <Intro />
           </section>
-          <section id="work">
+          <section id="work" className=" z-40">
             <Work />
           </section>
           <section id="about">

@@ -1,24 +1,22 @@
-"use client";
 import { ProjectImg } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 const Work = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0, scale: 0.9 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{
-        duration: 0.3,
-        ease: [0, 0.71, 0.2, 1.01],
-        scale: {
-          type: "spring",
-          damping: 8,
-          stiffness: 100,
-          restDelta: 0.001,
-        },
-      }}
+    <div
+      // initial={{ opacity: 0, scale: 0.9 }}
+      // whileInView={{ opacity: 1, scale: 1 }}
+      // transition={{
+      //   duration: 0.3,
+      //   ease: [0, 0.71, 0.2, 1.01],
+      //   scale: {
+      //     type: "spring",
+      //     damping: 8,
+      //     stiffness: 100,
+      //     restDelta: 0.001,
+      //   },
+      // }}
       className="w-[300px] sm:w-[600px] md:w-[750px] lg:w-[800px] h-[500px] font-mono text-sm"
     >
       <div className="h-full grid grid-cols-1 grid-rows-12 lg:grid-rows-1 lg:grid-cols-12">
@@ -200,7 +198,7 @@ const Work = () => {
             </Link>
             <Link
               href={"/my-work"}
-              className="flex lg:hidden absolute w-[100px] text-center py-2 px-4 pt-32 bg-teal-500 -bottom-[85px] right-[10px] hover:-bottom-[95px] hover:animate-wiggleb text-white transition-all cursor-pointer z-0"
+              className="flex lg:hidden absolute w-[100px] text-center py-2 px-4 pt-32 bg-teal-500 -bottom-[85px] right-[10px] hover:-bottom-[95px] hover:animate-wiggleb text-white transition-all cursor-pointer z-5"
             >
               <p>All Projects</p>
             </Link>
@@ -208,7 +206,7 @@ const Work = () => {
           <div className="w-full h-[10px] lg:w-[10px]  lg:h-full bg-stone-400" />
         </section>
       </div>
-    </motion.div>
+    </div>
   );
 };
 
