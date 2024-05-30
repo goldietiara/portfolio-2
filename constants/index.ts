@@ -51,7 +51,7 @@ export const ThreeProjects = [
       "Learning more complex database for comments & replied sub-comments, making the sub-comments as a new parent. User can now comment another sub comments and make them as a new thread/tweet. This logic can be implemented using recursion.",
     stack: ["react", "mongodb", "next", "prisma", "clerk"],
     images: "twitter.png",
-    link: "https://twitter-clone-goldietiaraid-gmailcom.vercel.app",
+    link: "https://twitter-clone-pcto-goldietiaraidgmailcoms-projects.vercel.app",
   },
 ];
 
@@ -70,7 +70,7 @@ export const AllProjects = [
       "Learning more complex database for comments & replied sub-comments, making the sub-comments as a new parent. User can now comment another sub comments and make them as a new thread/tweet. This logic can be implemented using recursion.",
     stack: ["react", "mongodb", "next", "prisma", "clerk"],
     images: "twitter.png",
-    link: "https://twitter-clone-goldietiaraid-gmailcom.vercel.app",
+    link: "https://twitter-clone-pcto-goldietiaraidgmailcoms-projects.vercel.app",
   },
   {
     projectName: "E-commerce",
